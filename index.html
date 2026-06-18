@@ -827,7 +827,7 @@ function downloadPDF() {
     checkPage(36);
     doc.setDrawColor(...black);
     doc.setLineWidth(1.2);
-    doc.line(margin, y, W - margin -80, y);
+    doc.line(margin, y, W - margin, y);
     y += 14;
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(10);
@@ -836,7 +836,7 @@ function downloadPDF() {
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(22);
     doc.setTextColor(...orange);
-    doc.text('$' + total, W - margin, y + 2, { align: 'right' });
+    doc.text('$' + total, W - margin, y + 7, { align: 'right' });
     y += 16;
   }
 
